@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<strong id="reqem">0</strong>;
+<button id="artir">Artir</button>;
+<button id="azalt">Azalt</button>;
+
+<script>
+let plus = document.getElementById("artir");
+let minus = document.getElementById("azalt")
+let number = 0
+
+
+plus.addEventListener("click", function(){
+    number++;
+    document.querySelector("#reqem").innerText = number;
+})
+
+minus.addEventListener("click", function(){
+    if (number > 0){
+        number = number - 1;
+    }
+    document.querySelector("#reqem").innerText = number;
+})
+
+
+
+</script>
+    
+</body>
+</html>
